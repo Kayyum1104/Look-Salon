@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOOK SALON – Affordable Men's Haircuts, Beard Styling & Grooming</title>
+<meta name="description" content="LOOK SALON is a friendly men's grooming salon offering haircuts, beard styling, facials and more at affordable prices. Book your appointment on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/SalonLogo.png">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="logo" aria-label="LOOK SALON home">LOOK<span> SALON</span></a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#pricing">Pricing</a>
+      <a href="#offers">Offers</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      <button class="btn btn--primary book-btn" data-service="General Appointment">Book Appointment</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero__content">
+    <p class="eyebrow">Your Style. Your Look. Your Confidence.</p>
+    <h1>LOOK GOOD. <span>FEEL GOOD.</span></h1>
+    <p class="lead">Your style, our passion. Experience quality men's grooming at prices you'll love.</p>
+    <div class="btn-row">
+      <button class="btn btn--primary book-btn" data-service="General Appointment">Book Your Appointment</button>
+      <a class="btn btn--ghost" href="#services">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about reveal">
+    <div class="about__img img-wrap"><img src="images/about.jpg" alt="Interior of LOOK SALON" loading="lazy"></div>
+    <div>
+      <h2 class="title">ABOUT LOOK SALON</h2>
+      <p>LOOK SALON is a friendly men's grooming destination for quality haircuts, beard styling and personal grooming at pocket-friendly prices. Whether you want a clean everyday cut or a fresh new style, we are here to help you look and feel your best.</p>
+      <ul class="ticks">
+        <li>Professional grooming services</li><li>Friendly barber experience</li>
+        <li>Clean and comfortable environment</li><li>Affordable pricing</li><li>Your satisfaction comes first</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section--alt" id="services">
+  <div class="container"><h2 class="title center">OUR SERVICES</h2>
+    <p class="note center"></p>
+    <div class="grid grid--3" id="servicesGrid"></div></div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="container"><h2 class="title center">OUR PRICE MENU</h2>
+    <p class="note center"></p>
+    <div class="grid grid--2" id="priceGrid"></div></div>
+</section>
+
+<!-- OFFERS -->
+<section class="section section--alt" id="offers">
+  <div class="container"><h2 class="title center">SPECIAL OFFERS</h2>
+    <p class="note center"></p>
+    <div class="grid grid--3" id="offersGrid"></div></div>
+</section>
+
+<!-- BARBERS -->
+<section class="section" id="barbers">
+  <div class="container"><h2 class="title center">MEET OUR BARBERS</h2>
+    <p class="note center"></p>
+    <div class="grid grid--4" id="barbersGrid"></div></div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section--alt" id="gallery">
+  <div class="container"><h2 class="title center">OUR GALLERY</h2>
+    <div class="grid grid--3 gallery" id="galleryGrid"></div></div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="container"><h2 class="title center">WHAT OUR CUSTOMERS SAY</h2>
+    <p class="note center"></p>
+    <div class="grid grid--3" id="reviewsGrid"></div></div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section--alt" id="contact">
+  <div class="container"><h2 class="title center">VISIT LOOK SALON</h2>
+    <div class="contact reveal">
+      <div class="contact__info">
+        <p><strong>Address</strong><br><span data-cfg="address"></span></p>
+        <p><strong>Phone</strong><br><span data-cfg="phone"></span></p>
+        <p><strong>WhatsApp</strong><br><span data-cfg="whatsappDisplay"></span></p>
+        <p><strong>Opening Hours</strong><br><span data-cfg="hours"></span></p>
+        <p><strong>Instagram</strong><br><a data-cfg-link="instagram" target="_blank" rel="noopener">Instagram profile</a></p>
+        <div class="btn-row">
+          <a class="btn btn--primary" id="directionsBtn" href="#contact" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn--ghost" id="contactBtn" href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="map" id="mapBox"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div><a href="#home" class="logo">LOOK<span> SALON</span></a>
+      <p>Friendly, affordable men's grooming. Your Style. Your Look. Your Confidence.</p></div>
+    <div><h3>Quick Links</h3>
+      <a href="#about">About</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#offers">Offers</a><a href="#gallery">Gallery</a></div>
+    <div><h3>Contact</h3><p data-cfg="address"></p><p data-cfg="phone"></p><p data-cfg="hours"></p></div>
+    <div><h3>Follow Us</h3><a data-cfg-link="instagram" target="_blank" rel="noopener">Instagram</a><a data-cfg-link="facebook" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+  <p class="copy">&copy; <span id="year"></span> LOOK SALON. All rights reserved.</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<button class="fab fab--wa book-btn" data-service="General Appointment" aria-label="Book on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 .9-2.200c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.800.9c.3.100.4.200.5.300.1.200.1.800-.1 1.400z"/></svg>
+</button>
+<button class="fab fab--top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+  <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<div class="toast" id="toast" role="alert"></div>
+<script src="script.js"></script>
+</body>
+</html>
